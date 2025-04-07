@@ -1,0 +1,68 @@
+/* Import the Deltarune font */
+@font-face {
+    font-family: 'Deltarune';
+    src: url('deltarune.otf') format('opentype');
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg.png') no-repeat center center/cover;
+    z-index: 1;
+}
+
+/* Fedro Sprite */
+#fedro-sprite {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; /* Adjust based on your sprite size */
+    z-index: 2;
+}
+
+/* Textbox Container */
+.textbox-container {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-align: center;
+}
+
+/* Textbox Image */
+.textbox {
+    width: 600px; /* Adjust based on your textbox size */
+}
+
+/* Text inside the textbox */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Deltarune', sans-serif;
+    font-size: 24px;
+    color: white; /* Adjust color if needed */
+    width: 80%;
+}
